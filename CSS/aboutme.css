@@ -1,0 +1,103 @@
+#about{
+    margin: 0px;
+}
+
+.title{
+    /* text-align: center; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 220px;
+    font-weight: lighter;
+    color: black;
+    transition: text-shadow .4s ease-out;
+    padding: 0;
+    width: 525px;
+    height: 220px;
+    margin: 0px 0 0 400px;    
+}
+
+.title:hover {
+    text-shadow: 0 10px 10px grey;
+    color: black;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;
+    margin: 20px 0 0 850px;
+    font-weight: lighter;
+    color: #96bc99;
+    width: 375px;
+    transition: text-shadow .4s ease-out;
+
+}
+
+h2:hover {
+    text-shadow: 0 3px 3px grey;
+
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    float: right;
+    margin-right: 550px;
+    margin-top: 0px;
+}
+
+.aboutMePic img{
+    width: 18.75vw;
+    height: 18.75vw;
+    margin: -100px 0 0 20px;
+    float: left;
+    border-radius: 50%;
+}
+
+.aboutMeDesc{
+    display: flex;
+    flex-direction: row;
+    /* outline: 1px solid black; */
+    margin: 20px 0 100px 0;
+}
+
+.aboutMeDesc img{
+    width: 13vw;
+    height: 13vh;
+    margin-left: 120px;
+    margin-right: 10px;
+}
+
+.pictures {
+    margin-top: -70px;
+    height: 100%;
+}
+
+.aboutMeDesc p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    width: calc(70vw/3);
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.desc1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 350px;
+    border-right: 1px solid black;
+
+}
+
+.desc2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    border-right: 1px solid black;
+    height: 375px;
+}
+
+.desc3 {
+    margin-top: 350px;
+}
