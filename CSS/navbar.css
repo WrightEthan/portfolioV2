@@ -27,6 +27,9 @@ navbar::after {
 
 }
 
+.rotate {
+}
+
 nav {
     float: right;
     margin-right: 70px;

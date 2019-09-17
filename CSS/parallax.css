@@ -7,13 +7,14 @@
     font-family: 'Amatic SC', cursive;
     position: relative;
     z-index: -1;
-    
+    width: 100vw;
 }
 
 .parallax{
     background: url('/PortfolioV2/assets/eberhard-grossgasteiger-5P91SF0zNsI-unsplash.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
