@@ -7,19 +7,17 @@
     font-family: 'Amatic SC', cursive;
     position: relative;
     z-index: -1;
-    width: 100vw;
 }
 
 .parallax{
-    background: url('/PortfolioV2/assets/eberhard-grossgasteiger-5P91SF0zNsI-unsplash.jpg') no-repeat center;
+    background: linear-gradient(to bottom, rgba(121, 129, 147, .3), rgba(121, 129, 147, 0)), url('/assets/eberhard-grossgasteiger-5P91SF0zNsI-unsplash.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: white;
-    filter: grayscale(40%);
+    /* color: white; */
+    /* filter: contrast(75%); */
 }

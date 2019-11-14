@@ -1,8 +1,9 @@
 #about{
     margin: 0px;
+    
 }
 
-.title{
+.abouttitle{
     /* text-align: center; */
     font-family: 'Quicksand', sans-serif;
     font-size: 220px;
@@ -15,7 +16,7 @@
     margin: 0px 0 0 400px;    
 }
 
-.title:hover {
+.abouttitle:hover {
     text-shadow: 0 10px 10px grey;
     color: black;
 }
@@ -25,7 +26,7 @@ h2 {
     font-size: 80px;
     margin: 20px 0 0 850px;
     font-weight: lighter;
-    color: #96bc99;
+    color: #DA7E2C;
     width: 375px;
     transition: text-shadow .4s ease-out;
 
@@ -42,6 +43,11 @@ h3 {
     float: right;
     margin-right: 550px;
     margin-top: 0px;
+}
+
+h3:hover {
+    text-shadow: 0 0 10px yellow;
+    transition: text-shadow .4s ease-out;
 }
 
 .aboutMePic img{
@@ -62,8 +68,8 @@ h3 {
 .aboutMeDesc img{
     width: 13vw;
     height: 13vh;
-    margin-left: 120px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pictures {
@@ -76,7 +82,7 @@ h3 {
     text-align: center;
     font-size: 19px;
     font-weight: bold;
-    width: calc(70vw/3);
+    width: calc(65vw/3);
     margin-left: 28px;
     margin-right: 28px;
 }
@@ -99,5 +105,12 @@ h3 {
 }
 
 .desc3 {
-    margin-top: 350px;
+    margin-top: 350px; 
+    
+}
+
+.desc3 img {
+    margin-left: 80px;
+    margin-right: auto;
+
 }

@@ -1,6 +1,11 @@
+*:focus {
+    outline: 0;
+}
+
 navbar{
     position: fixed;
     top: 0;
+    right: 0;
 }
 
 .navcontainer{
@@ -17,51 +22,76 @@ navbar::after {
 }
 
 .logo{
+    position: absolute;
     float: left;
     margin: 15px 0 0 40px;
     padding: 5px;
     font-family: 'Quicksand', sans-serif;
-    border: solid 2px black;
-    border-radius: 5%;
+    border: solid 3px black;
+    border-radius: 7px;
 
 
-}
-
-.rotate {
 }
 
 nav {
     float: right;
-    margin-right: 70px;
 }
 
-nav ul {
+.navToggle {
     margin: 10px;
+    margin-right: 70px;
     padding: 0;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    height: 0;
+    color: rgba(0,0,0,0);
+    transition-duration: 300ms;
+}
 
+.navToggleD {
+    margin: 10px;
+    margin-right: 70px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    height: 100%;
+    color: rgba(0,0,0,1);
+    transition-duration: 300ms;
 
 }
 
+
 nav li {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 20px;
     padding-top: 20px;
-
     position: relative;
 
 }
 
-nav a {
-    color: black;
+.menuItem {
+    color: rgba(0,0,0,0);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    transition-duration: 300ms;
+
+}
+
+.menuItemExpanded {
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition-duration: 300ms;
+
 }
 
 nav a:hover {
     font-weight: bolder;
+    transition-duration: 0ms;
 }
 
 nav a::before {
@@ -69,15 +99,45 @@ nav a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #96bc99;
-
+    /* background: linear-gradient(to right,rgba(0, 0, 0,1),rgba(0, 0, 0,0)); */
+    border-radius: 10px;
     position: absolute;
-    top: 0vh;
+    left: -5px;
+    top: 6vh;
     width: 0%;
-
-    transition: all ease-in-out 300ms;
+    transition-duration: 200ms;
 }
 
 nav a:hover::before {
-    width: 100%;
+    width: 130%;
+}
+
+.expand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0);
+}
+
+.closed {
+    height: 23px;
+    width: 23px;
+    margin: 3px 0 0 -2.5px;
+    transition-duration: 300ms;
+
+}
+
+.open {
+    height: 23px;
+    width: 23px;
+    margin: 3px 0 0 -2.5px;
+    transform: rotateZ(90deg);
+    transition-duration: 300ms;
+
 }
