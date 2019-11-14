@@ -1,0 +1,11 @@
+#currentWorks {
+    padding-top: 40px;
+    height: 100vh;
+}
+
+#currentWorks h1 {
+    text-align: center;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
