@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-
     <style>
         html, body {
     width: 100%;
@@ -18,16 +17,20 @@
     padding: 0px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    }
-    </style>
+}
+</style>
 </head>
-
 <body>
-<div id="home">
+    <div id="preloader">
+        <div class="loaderHeader">LOADING...</div>
+        <div class="spinner"></div>
+        <div class="diag-one"></div>
+        <div class="diag-two"></div>
+    </div>
+    
     <navbar>
         <div class="navcontainer">
-
-            <h1 class="logo">E M W</span></h1>
+            <h1 class="logo">E M W</h1>
             <nav>
                 <ul class="navToggle" id="navbar">
                     <li><a href="#home" class="menuItem" id="menuOpen1">Home</a></li> 
@@ -41,25 +44,36 @@
                     <li><a href="#contact" class="menuItem" id="menuOpen5">Contact/Social Media</a></li>
                 </ul>
             </nav>
-            <li><button class="expand" id="expandButton"><img src="/assets/drop-down-arrow.svg" class="closed" id="menuArrow"></button></li>
+            <li><button class="expand" id="expandButton"><img src="./assets/drop-down-arrow.svg" class="closed" id="menuArrow"></button></li>
         </div>
     </navbar>
-
-    <div class="parallaxcontainer">
-        <div class="parallax">
-            <h1 class="h1" style="font-weight: lighter; width: 100%;">Ethan Wright</h1>
-            <p style="width: 100%; color: white; margin-top: -30px; font-size: 32px;">Full Stack Developer <span style="color: #353638; font-weight: bold;">//</span><span> Graphic Artist </span><span style="color: #353638; font-weight: bold">//</span> Lefty in a world for righties</p>
+    <div id="home">
+        <div class="parallaxcontainer">
+            <div class="parallax">
+                <h1 class="h1" style="font-weight: lighter; width: 100%;">Ethan Wright</h1>
+                <p style="width: 100%; color: white; margin-top: -30px; font-size: 32px;">Full Stack Developer <span style="color: #353638; font-weight: bold;">//</span><span> Graphic Artist </span><span style="color: #353638; font-weight: bold">//</span> Lefty in a world for righties</p>
+            </div>
         </div>
     </div>
-</div>
-<div id="about">
-    <div class="aboutme-wrapper">
-        <img class="headshot" src="assets/ZWS_5330_Square.jpg">
+    <div id="about">
+        <div class="aboutme-wrapper">
+            <img class="headshot" src="assets/ZWS_5330_Square.jpg">
+        </div>
     </div>
-    <div class="diag-one"></div>
-    <div class="diag-two"></div>
-</div>
+    <div class="transparallaxcontainer">
+        <div class="transparallax"></div>
+    </div>
+    <div id="assets">
+        <div class="assets-wrapper"></div>
+    </div>
+    <div class="transparallaxcontainer">
+        <div class="transparallax"></div>
+    </div>
+    <div id="currentworks">
+        <div class="currentworks-wrapper"></div>
+    </div>
+</body>
 <script src="JS/carousel.js"></script>
 <script src="JS/expand.js"></script>
-    </body>
+<script src="JS/preloader.js"></script>
 </html>
